@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Annie Thomas — PMP Certified Project & Operations Manager EMEA. IIT Madras | MBA LJMU UK | Ex-Govt. of India. Based in Dubai, UAE."/>
+<meta name="keywords" content="Annie Thomas, Project Manager, EMEA, PMP, Dubai, Strategy, ESG, Consulting, IIT Madras"/>
+<meta property="og:title" content="Annie Thomas — Project & Operations Manager EMEA"/>
+<meta property="og:description" content="PMP | MBA LJMU UK | IIT Madras | Ex-Govt. of India | Dubai UAE"/>
+<meta property="og:type" content="website"/>
+<title>Annie Thomas — Project & Operations Manager EMEA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+<style>
+:root {
+  --gold: #C4956A;
+  --gold-light: rgba(196,149,106,0.12);
+  --gold-border: rgba(196,149,106,0.3);
+  --purple: #9F98DD;
+  --purple-light: rgba(159,152,221,0.1);
+  --bg: #080810;
+  --bg2: #0f0f1a;
+  --bg3: #14141f;
+  --text: #ece8e0;
+  --text-muted: rgba(236,232,224,0.5);
+  --text-faint: rgba(236,232,224,0.28);
+  --border: rgba(255,255,255,0.07);
+  --border-hover: rgba(196,149,106,0.35);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7;}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px;}
+
+/* NAV */
+nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.1rem 2.5rem;
+  border-bottom:0.5px solid var(--border);
+  position:sticky;top:0;
+  background:rgba(8,8,16,0.97);
+  backdrop-filter:blur(12px);
+  z-index:100;
+}
+.nav-logo{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.2rem;font-weight:700;letter-spacing:.05em;
+  color:var(--text);text-decoration:none;
+}
+.nav-logo span{color:var(--gold);}
+.nav-links{display:flex;gap:1.8rem;list-style:none;}
+.nav-links a{
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-faint);text-decoration:none;
+  transition:color .2s;cursor:pointer;
+}
+.nav-links a:hover{color:var(--gold);}
+
+/* HERO */
+.hero{
+  min-height:90vh;
+  display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center;
+  padding:6rem 2.5rem 4rem;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 60% 60% at 80% 20%,rgba(196,149,106,.10) 0%,transparent 65%),
+    radial-gradient(ellipse 45% 55% at 5% 85%,rgba(159,152,221,.08) 0%,transparent 60%);
+}
+.hero-eyebrow{
+  font-size:10px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1rem;
+  animation:fadeUp .8s ease both;
+}
+.hero-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3.2rem,7vw,5.5rem);
+  line-height:1;font-weight:700;
+  color:var(--text);margin-bottom:.4rem;
+  animation:fadeUp .8s .1s ease both;
+}
+.hero-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1rem,2.2vw,1.45rem);
+  font-style:italic;color:var(--gold);
+  margin-bottom:1.3rem;line-height:1.4;
+  animation:fadeUp .8s .2s ease both;
+}
+.hero-bio{
+  font-size:.9rem;color:var(--text-muted);
+  line-height:1.9;max-width:560px;font-weight:300;
+  margin-bottom:1.8rem;
+  animation:fadeUp .8s .3s ease both;
+}
+.badge-row{
+  display:flex;flex-wrap:wrap;gap:7px;margin-bottom:2rem;
+  animation:fadeUp .8s .4s ease both;
+}
+.badge{
+  font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+  padding:4px 14px;border-radius:100px;
+  border:0.5px solid var(--gold-border);
+  color:var(--gold);background:var(--gold-light);
+}
+.badge.purple{
+  border-color:rgba(159,152,221,.35);
+  color:var(--purple);background:var(--purple-light);
+}
+.cta-row{
+  display:flex;gap:12px;flex-wrap:wrap;
+  animation:fadeUp .8s .5s ease both;
+}
+.btn-gold{
+  font-family:'Outfit',sans-serif;font-size:12px;letter-spacing:.08em;
+  padding:11px 28px;border-radius:4px;cursor:pointer;
+  background:var(--gold);color:#080810;border:none;
+  transition:opacity .2s,transform .15s;font-weight:500;
+}
+.btn-gold:hover{opacity:.85;transform:translateY(-1px);}
+.btn-ghost{
+  font-family:'Outfit',sans-serif;font-size:12px;letter-spacing:.08em;
+  padding:11px 28px;border-radius:4px;cursor:pointer;
+  background:transparent;color:var(--text-muted);
+  border:0.5px solid rgba(236,232,224,.18);
+  transition:all .2s;
+}
+.btn-ghost:hover{border-color:rgba(236,232,224,.4);color:var(--text);}
+
+/* AVATAR */
+.hero-right{
+  display:flex;flex-direction:column;align-items:center;gap:16px;
+  position:relative;z-index:1;
+  animation:fadeUp .8s .3s ease both;
+}
+.avatar{
+  width:140px;height:140px;border-radius:50%;
+  border:2px solid var(--gold-border);
+  background:linear-gradient(135deg,#2a1f14,#1a1a2e);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:3rem;font-weight:700;color:var(--gold);
+}
+.stats-row{display:flex;gap:24px;}
+.stat-mini{text-align:center;}
+.stat-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.8rem;font-weight:700;color:var(--gold);
+}
+.stat-lbl{
+  font-size:9px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-faint);margin-top:2px;
+}
+
+/* SECTIONS */
+section{padding:5rem 2.5rem;border-top:0.5px solid var(--border);}
+.sec-label{
+  font-size:9px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--text-faint);margin-bottom:2.8rem;
+  display:flex;align-items:center;gap:14px;
+}
+.sec-label::after{content:'';flex:1;height:.5px;background:var(--border);}
+.sec-heading{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:700;
+  color:var(--text);margin-bottom:1rem;line-height:1.2;
+}
+
+/* ACHIEVEMENTS */
+.ach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.ach-card{
+  background:var(--gold-light);
+  border:0.5px solid var(--gold-border);
+  border-radius:10px;padding:1.4rem;
+  transition:transform .2s;
+}
+.ach-card:hover{transform:translateY(-3px);}
+.ach-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.2rem;font-weight:700;color:var(--gold);
+}
+.ach-lbl{font-size:11px;color:var(--text-muted);line-height:1.6;margin-top:5px;font-weight:300;}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.about-body{font-size:.9rem;color:var(--text-muted);line-height:1.9;font-weight:300;margin-bottom:1rem;}
+.awards{display:flex;flex-direction:column;gap:12px;}
+.award{border-left:2px solid var(--gold);padding-left:14px;}
+.award-title{font-size:13px;font-weight:500;color:var(--text);}
+.award-body{font-size:11px;color:var(--text-faint);margin-top:2px;line-height:1.5;}
+
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.skill-card{
+  background:rgba(255,255,255,.02);
+  border:0.5px solid var(--border);
+  border-radius:10px;padding:1.3rem;
+  transition:border-color .2s,background .2s,transform .2s;
+}
+.skill-card:hover{
+  border-color:var(--border-hover);
+  background:var(--gold-light);
+  transform:translateY(-2px);
+}
+.sk-icon{font-size:20px;color:var(--gold);margin-bottom:10px;}
+.sk-title{font-size:13px;font-weight:500;color:var(--text);margin-bottom:6px;}
+.sk-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px;}
+.sk-tag{
+  font-size:9px;letter-spacing:.06em;text-transform:uppercase;
+  padding:2px 9px;border-radius:100px;
+  background:rgba(255,255,255,.05);color:var(--text-faint);
+}
+
+/* CERTS */
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:1.5rem;}
+.cert{
+  display:flex;align-items:flex-start;gap:12px;
+  background:rgba(255,255,255,.02);
+  border:0.5px solid var(--border);
+  border-radius:10px;padding:1rem;
+  transition:border-color .2s;
+}
+.cert:hover{border-color:rgba(159,152,221,.35);}
+.cert-icon{font-size:18px;color:var(--purple);flex-shrink:0;margin-top:2px;}
+.cert-title{font-size:12px;font-weight:500;color:var(--text);}
+.cert-body{font-size:10px;color:var(--text-faint);margin-top:2px;line-height:1.5;}
+
+/* PROJECTS */
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.proj{
+  border:0.5px solid var(--border);border-radius:10px;
+  padding:1.6rem;background:rgba(255,255,255,.02);
+  display:flex;flex-direction:column;gap:10px;
+  transition:border-color .2s,transform .2s;cursor:pointer;
+}
+.proj:hover{border-color:var(--border-hover);transform:translateY(-3px);}
+.proj-cat{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple);}
+.proj-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.1rem;font-weight:700;color:var(--text);line-height:1.3;
+}
+.proj-desc{font-size:11px;color:var(--text-muted);line-height:1.75;font-weight:300;}
+.proj-result{
+  font-size:10px;letter-spacing:.06em;color:var(--gold);
+  border-top:.5px solid var(--gold-border);padding-top:10px;margin-top:4px;
+}
+
+/* TIMELINE */
+.tl{position:relative;padding-left:2.2rem;}
+.tl::before{
+  content:'';position:absolute;left:0;top:8px;bottom:8px;
+  width:.5px;background:var(--border);
+}
+.tl-item{position:relative;padding-bottom:2.5rem;}
+.tl-item::before{
+  content:'';position:absolute;left:-2.2rem;top:8px;
+  width:8px;height:8px;border-radius:50%;
+  background:var(--gold);box-shadow:0 0 0 4px rgba(196,149,106,.15);
+}
+.tl-date{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint);margin-bottom:3px;}
+.tl-role{font-size:14px;font-weight:500;color:var(--text);}
+.tl-org{font-size:11px;color:var(--gold);margin-bottom:7px;}
+.tl-body{font-size:11px;color:var(--text-muted);line-height:1.8;font-weight:300;}
+
+/* LANGUAGES */
+.lang-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.lang-card{
+  background:rgba(255,255,255,.02);
+  border:0.5px solid var(--border);
+  border-radius:10px;padding:1rem;
+}
+.lang-name{font-size:13px;font-weight:500;color:var(--text);}
+.lang-level{font-size:10px;color:var(--text-faint);margin-top:2px;}
+.lang-dots{display:flex;gap:5px;margin-top:8px;}
+.dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.1);}
+.dot.on{background:var(--gold);}
+
+/* BLOG */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.blog-card{
+  border:0.5px solid var(--border);border-radius:10px;
+  padding:1.3rem;background:rgba(255,255,255,.02);
+  cursor:pointer;transition:border-color .2s,transform .2s;
+}
+.blog-card:hover{border-color:rgba(159,152,221,.4);transform:translateY(-2px);}
+.blog-tag{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple);margin-bottom:8px;}
+.blog-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:.95rem;font-weight:600;color:var(--text);line-height:1.4;
+}
+.blog-date{font-size:9px;color:var(--text-faint);margin-top:10px;}
+
+/* CONTACT */
+.contact-wrap{
+  background:var(--gold-light);
+  border:0.5px solid var(--gold-border);
+  border-radius:14px;padding:3.5rem 2rem;text-align:center;
+}
+.contact-heading{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.2rem;font-weight:700;color:var(--text);margin-bottom:.6rem;
+}
+.contact-sub{font-size:13px;color:var(--text-muted);margin-bottom:2rem;font-weight:300;}
+.pills{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;}
+.pill{
+  display:flex;align-items:center;gap:7px;font-size:12px;
+  letter-spacing:.06em;padding:10px 20px;border-radius:100px;
+  border:.5px solid rgba(255,255,255,.12);
+  color:var(--text-muted);text-decoration:none;
+  transition:border-color .2s,color .2s,background .2s;cursor:pointer;
+}
+.pill:hover{border-color:var(--gold-border);color:var(--gold);background:var(--gold-light);}
+.pill i{font-size:15px;}
+
+/* FOOTER */
+footer{
+  padding:2rem 2.5rem;border-top:.5px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:10px;color:var(--text-faint);letter-spacing:.08em;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(24px);}
+  to{opacity:1;transform:translateY(0);}
+}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding:4rem 1.5rem 3rem;}
+  .hero-right{flex-direction:row;justify-content:flex-start;}
+  .ach-grid{grid-template-columns:repeat(2,1fr);}
+  .about-grid{grid-template-columns:1fr;}
+  .skills-grid{grid-template-columns:repeat(2,1fr);}
+  .proj-grid{grid-template-columns:1fr;}
+  .lang-grid{grid-template-columns:repeat(2,1fr);}
+  .blog-grid{grid-template-columns:1fr;}
+  nav{padding:1rem 1.5rem;}
+  .nav-links{gap:1rem;}
+  section{padding:3rem 1.5rem;}
+}
+@media(max-width:600px){
+  .ach-grid{grid-template-columns:1fr 1fr;}
+  .skills-grid{grid-template-columns:1fr;}
+  .cert-grid{grid-template-columns:1fr;}
+  .nav-links{display:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero">Annie Thomas<span>.</span></a>
+  <ul class="nav-links">
+    <li><a onclick="gs('about')">About</a></li>
+    <li><a onclick="gs('skills')">Skills</a></li>
+    <li><a onclick="gs('projects')">Projects</a></li>
+    <li><a onclick="gs('experience')">Experience</a></li>
+    <li><a onclick="gs('blog')">Blog</a></li>
+    <li><a onclick="gs('contact')">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div>
+    <div class="hero-eyebrow">PMP · MBA LJMU UK · IIT Madras · Dubai, UAE</div>
+    <h1 class="hero-name">Annie Thomas</h1>
+    <div class="hero-title">Project & Operations Manager — EMEA | Engineer · Strategist · Change Maker</div>
+    <p class="hero-bio">From engineering labs at IIT Madras to boardrooms across EMEA — I turn ambiguity into action, complexity into clarity, and strategy into measurable results. 8 years. 3 continents. 10M+ AED delivered.</p>
+    <div class="badge-row">
+      <span class="badge">PMP Certified</span>
+      <span class="badge">MBA – LJMU, UK</span>
+      <span class="badge purple">IIT Madras</span>
+      <span class="badge purple">Ex–Govt. of India</span>
+      <span class="badge">EMEA & India</span>
+      <span class="badge">ESG · ERP · ICT</span>
+    </div>
+    <div class="cta-row">
+      <button class="btn-gold" onclick="gs('projects')">View My Work</button>
+      <button class="btn-ghost" onclick="gs('contact')">Let's Connect</button>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="avatar">AT</div>
+    <div class="stats-row">
+      <div class="stat-mini"><div class="stat-num">8+</div><div class="stat-lbl">Years</div></div>
+      <div class="stat-mini"><div class="stat-num">10M+</div><div class="stat-lbl">AED</div></div>
+      <div class="stat-mini"><div class="stat-num">8</div><div class="stat-lbl">Languages</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section style="padding-top:3rem;padding-bottom:3rem;" class="reveal">
+  <div class="ach-grid">
+    <div class="ach-card">
+      <div class="ach-num">10M+ AED</div>
+      <div class="ach-lbl">IT projects delivered in 9 months, exceeding client expectations by 20%</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-num">50+</div>
+      <div class="ach-lbl">ESG frameworks integrated across EMEA, enhancing sustainability by 30%</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-num">200+</div>
+      <div class="ach-lbl">Team members trained on risk management, boosting awareness by 40%</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-num">25%</div>
+      <div class="ach-lbl">Resource utilization improvement through efficient budget management</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <div class="sec-label">About Me</div>
+  <div class="about-grid">
+    <div>
+      <h2 class="sec-heading">Engineering Precision Meets Strategic Vision.</h2>
+      <p class="about-body">A rare blend of STEM rigor and business acumen — I hold a B.E. in Agriculture Engineering, a PGPM from IMT Ghaziabad, and an MBA in Business & Law (A grade) from Liverpool John Moores University, UK.</p>
+      <p class="about-body">Trained at IIT Madras and the Government of India's research institutions, I bring an engineer's precision to every strategic challenge. Currently leading ICT & hospitality technology projects across EMEA & India at CADD Emirates, working with Marriott, Accor, IHG, Hilton, and Wyndham.</p>
+      <p class="about-body">Beyond the boardroom — State-level boxing & karate champion. Multilingual in 8 languages. McKinsey Forward Associate. BCG Strategic Consulting trained. Stanford Organizational Analysis alumna. Harvard Business Review published contributor.</p>
+    </div>
+    <div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--text);margin-bottom:1.2rem;font-weight:600;">Honours & Awards</h3>
+      <div class="awards">
+        <div class="award">
+          <div class="award-title">PMP® Certified — PMI, USA</div>
+          <div class="award-body">Credential ID 4292842 · Issued Jan 2026 · Expires Jan 2029</div>
+        </div>
+        <div class="award">
+          <div class="award-title">State & National Boxing Champion</div>
+          <div class="award-body">Under-17 category · 4 championships · 2012–2016</div>
+        </div>
+        <div class="award">
+          <div class="award-title">Certified SolidWorks Professional</div>
+          <div class="award-body">Dassault Systèmes, France · Dec 2019</div>
+        </div>
+        <div class="award">
+          <div class="award-title">McKinsey Forward Program Associate</div>
+          <div class="award-body">McKinsey.org · Leadership & Strategy</div>
+        </div>
+        <div class="award">
+          <div class="award-title">IIM Ahmedabad — Leadership Certificate</div>
+          <div class="award-body">India's premier management institution</div>
+        </div>
+        <div class="award">
+          <div class="award-title">Stanford University — Organizational Analysis</div>
+          <div class="award-body">Certificate in organizational systems & strategy</div>
+        </div>
+        <div class="award">
+          <div class="award-title">Harvard Business Review — Published Member</div>
+          <div class="award-body">Accredited for impactful business insights</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+  <div class="sec-label">Skills & Expertise</div>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="sk-icon"><i class="ti ti-layout-dashboard"></i></div>
+      <div class="sk-title">Project & Operations Management</div>
+      <div class="sk-tags"><span class="sk-tag">PMP</span><span class="sk-tag">Agile</span><span class="sk-tag">Cross-functional</span><span class="sk-tag">EMEA</span><span class="sk-tag">Portfolio Mgmt</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="sk-icon"><i class="ti ti-plant-2"></i></div>
+      <div class="sk-title">ESG & Sustainability</div>
+      <div class="sk-tags"><span class="sk-tag">ESG Reporting</span><span class="sk-tag">CSR</span><span class="sk-tag">Climate</span><span class="sk-tag">Governance</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="sk-icon"><i class="ti ti-server"></i></div>
+      <div class="sk-title">ICT & ERP Delivery</div>
+      <div class="sk-tags"><span class="sk-tag">SHIJI</span><span class="sk-tag">HOTEZA</span><span class="sk-tag">ERP</span><span class="sk-tag">Digital Integration</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="sk-icon"><i class="ti ti-chart-arrows"></i></div>
+      <div class="sk-title">Business Strategy & Consulting</div>
+      <div class="sk-tags"><span class="sk-tag">BCG Trained</span><span class="sk-tag">Market Research</span><span class="sk-tag">OKRs</span><span class="sk-tag">Transformation</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="sk-icon"><i class="ti ti-shield-check"></i></div>
+      <div class="sk-title">Risk & Compliance Management</div>
+      <div class="sk-tags"><span class="sk-tag">Risk Registers</span><span class="sk-tag">Fraud Control</span><span class="sk-tag">Business Continuity</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="sk-icon"><i class="ti ti-speakerphone"></i></div>
+      <div class="sk-title">Marketing & Personal Branding</div>
+      <div class="sk-tags"><span class="sk-tag">Digital Marketing</span><span class="sk-tag">HBR Publisher</span><span class="sk-tag">Google Certified</span></div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="sec-label" style="margin-top:3rem;margin-bottom:1rem;">Certifications</div>
+  <div class="cert-grid">
+    <div class="cert"><i class="ti ti-award cert-icon"></i><div><div class="cert-title">PMP® — Project Management Institute, USA</div><div class="cert-body">Credential ID 4292842 · Jan 2026 – Jan 2029</div></div></div>
+    <div class="cert"><i class="ti ti-atom cert-icon"></i><div><div class="cert-title">McKinsey Forward Program Associate</div><div class="cert-body">McKinsey.org · Leadership & Strategy</div></div></div>
+    <div class="cert"><i class="ti ti-brand-google cert-icon"></i><div><div class="cert-title">Google Digital Marketing & E-commerce</div><div class="cert-body">Google · Certified Professional</div></div></div>
+    <div class="cert"><i class="ti ti-building-skyscraper cert-icon"></i><div><div class="cert-title">Organizational Analysis — Stanford University</div><div class="cert-body">Strategic org design & systems thinking</div></div></div>
+    <div class="cert"><i class="ti ti-leaf cert-icon"></i><div><div class="cert-title">Sustainable Agricultural Land Management</div><div class="cert-body">University of Florida</div></div></div>
+    <div class="cert"><i class="ti ti-user-star cert-icon"></i><div><div class="cert-title">Leadership Skill — IIM Ahmedabad</div><div class="cert-body">India's premier management institute</div></div></div>
+    <div class="cert"><i class="ti ti-geometry cert-icon"></i><div><div class="cert-title">Certified SolidWorks Professional</div><div class="cert-body">Dassault Systèmes, France · Dec 2019</div></div></div>
+    <div class="cert"><i class="ti ti-trending-up cert-icon"></i><div><div class="cert-title">Strategic Consulting — BCG</div><div class="cert-body">Boston Consulting Group training program</div></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <div class="sec-label">Selected Projects</div>
+  <div class="proj-grid">
+    <div class="proj">
+      <div class="proj-cat">ICT · Hospitality Technology</div>
+      <div class="proj-title">10M AED IT Integration — Marriott, Accor, Hilton, IHG, Wyndham</div>
+      <div class="proj-desc">Led end-to-end IT system integrations across EMEA for top global hospitality brands — deploying SHIJI, HOTEZA, MessageBox, and Trayaway across properties in the Middle East.</div>
+      <div class="proj-result">↑ 20% above client expectations · FY2025 pipeline: 15M AED</div>
+    </div>
+    <div class="proj">
+      <div class="proj-cat">ESG · Sustainability</div>
+      <div class="proj-title">50+ ESG Framework Integration — EMEA Region</div>
+      <div class="proj-desc">Designed and implemented 50+ ESG frameworks across EMEA operations in 2023, aligning organizations with regulatory standards, stakeholder goals, and long-term sustainability targets.</div>
+      <div class="proj-result">↑ 30% sustainability improvement · Full regulatory compliance</div>
+    </div>
+    <div class="proj">
+      <div class="proj-cat">Government · Research · Engineering</div>
+      <div class="proj-title">Climate-Resilient Seed Incubator — Govt. of India</div>
+      <div class="proj-desc">Designed and fabricated a prototype seed incubation system and custom research machinery for India's largest mangrove forest at IFGTB, supporting national climate change and biodiversity research.</div>
+      <div class="proj-result">Kaveri Dam ESG Impact Study · Ministry of Environment, Govt. of India</div>
+    </div>
+    <div class="proj">
+      <div class="proj-cat">Risk Management · Training</div>
+      <div class="proj-title">Enterprise Risk Management Transformation</div>
+      <div class="proj-desc">Designed and delivered enterprise-wide risk training programs, overhauling fraud registers, business continuity protocols, and emergency response frameworks across cross-functional teams.</div>
+      <div class="proj-result">200 members trained · ↑ 40% risk awareness · 2023</div>
+    </div>
+    <div class="proj">
+      <div class="proj-cat">IIT Madras · CSR & Institutional Advancement</div>
+      <div class="proj-title">HNI Fundraising & CSR Strategy — IIT Madras</div>
+      <div class="proj-desc">Managed HNI accounts and CSR project portfolios for IIT Madras, reporting directly to the Dean and Director. Led event management for Shaastra, DAA, and major institutional milestones.</div>
+      <div class="proj-result">Stakeholder engagement across HNI · Alumni · MNC network</div>
+    </div>
+    <div class="proj">
+      <div class="proj-cat">Digital Strategy · Marketing</div>
+      <div class="proj-title">Head of Marketing — Hospitality Technology, CADD Emirates</div>
+      <div class="proj-desc">Led strategic marketing across EMEA & India for the hospitality tech division — driving market research, brand positioning, modern trade strategy, and category growth initiatives.</div>
+      <div class="proj-result">Data-driven strategy · Multi-market execution · Revenue growth</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="reveal">
+  <div class="sec-label">Work Experience</div>
+  <div class="tl">
+    <div class="tl-item">
+      <div class="tl-date">May 2023 — Present · Dubai, UAE</div>
+      <div class="tl-role">Project Manager — Hospitality Technology, ICT Delivery (EMEA & India)</div>
+      <div class="tl-org">CADD Emirates · Full-time</div>
+      <div class="tl-body">Driving 10M+ AED in IT integrations for Marriott, IHG, Accor, Hilton & Wyndham. Leading ESG, ERP, and digital transformation strategy across EMEA. Head of Marketing for the Hospitality Technology division. Managing cross-functional teams, client relationships, and regional accounts with FY2025 target of 15M AED.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Feb 2021 — May 2023 · Chennai, India</div>
+      <div class="tl-role">Project Management & CSR Lead / Associate Consultant</div>
+      <div class="tl-org">Indian Institute of Technology, Madras — Govt. of India</div>
+      <div class="tl-body">Reported to Dean & Director. Managed HNI accounts, ESG reporting, CSR project portfolios, and fundraising strategy. Led event management for Shaastra, DAA, and national events. Built and managed the IITM alumni data network. Collaborated on strategic planning with VP and Dean.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Jun 2019 — Feb 2021 · Coimbatore & Dehradun, India</div>
+      <div class="tl-role">Principal Engineer → Project Engineer</div>
+      <div class="tl-org">Institute of Forest Genetics & Tree Breeding — Ministry of Environment, Govt. of India</div>
+      <div class="tl-body">Designed and built a seed incubation prototype and custom research machinery for India's national climate resilience programme. Delivered the Kaveri Dam ESG Impact Study under Scientist-G mentorship. Collaborated with PhD scholars across IFGTB & FRI Dehradun.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Aug–Oct 2018 · Rajasthan & Haryana, India</div>
+      <div class="tl-role">Engineer Intern</div>
+      <div class="tl-org">National Seeds Corporation (Ministry of Agriculture) · ICAR — Asia's largest livestock research institute</div>
+      <div class="tl-body">Gained hands-on government research and operations experience across two premier Indian agricultural institutions, studying seed quality, distribution strategy, and agricultural research methodologies.</div>
+    </div>
+  </div>
+</section>
+
+<!-- LANGUAGES -->
+<section class="reveal">
+  <div class="sec-label">Languages</div>
+  <div class="lang-grid">
+    <div class="lang-card"><div class="lang-name">English</div><div class="lang-level">Native</div><div class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+    <div class="lang-card"><div class="lang-name">Hindi</div><div class="lang-level">Native</div><div class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+    <div class="lang-card"><div class="lang-name">Malayalam</div><div class="lang-level">Native</div><div class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+    <div class="lang-card"><div class="lang-name">Tamil</div><div class="lang-level">Native</div><div class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+    <div class="lang-card"><div class="lang-name">German</div><div class="lang-level">Advanced</div><div class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+    <div class="lang-card"><div class="lang-name">Urdu</div><div class="lang-level">Advanced</div><div class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+    <div class="lang-card"><div class="lang-name">Kannada</div><div class="lang-level">Proficient</div><div class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+    <div class="lang-card"><div class="lang-name">Telugu</div><div class="lang-level">Proficient</div><div class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="reveal">
+  <div class="sec-label">Blog & Thought Leadership</div>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <div class="blog-tag">ESG & Sustainability</div>
+      <div class="blog-title">Why ESG is the New Competitive Advantage in EMEA Markets</div>
+      <div class="blog-date">Coming Soon · 2025</div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-tag">Project Management</div>
+      <div class="blog-title">What IIT Madras Taught Me About Managing Uncertainty at Scale</div>
+      <div class="blog-date">Coming Soon · 2025</div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-tag">ICT & Hospitality Tech</div>
+      <div class="blog-title">The Future of Digital Integration in Global Hotel Brands</div>
+      <div class="blog-date">Coming Soon · 2025</div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-tag">Career & Leadership</div>
+      <div class="blog-title">From Government Labs to Dubai Boardrooms — My Unconventional Path</div>
+      <div class="blog-date">Coming Soon · 2025</div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-tag">Women in Tech & Leadership</div>
+      <div class="blog-title">Breaking Barriers: Engineering, Boxing & Building a Global Career</div>
+      <div class="blog-date">Coming Soon · 2025</div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-tag">Strategy</div>
+      <div class="blog-title">How McKinsey's Frameworks Changed the Way I Approach Risk</div>
+      <div class="blog-date">Coming Soon · 2025</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <div class="sec-label">Get In Touch</div>
+  <div class="contact-wrap">
+    <div class="contact-heading">Let's create impact together.</div>
+    <div class="contact-sub">Open to senior roles in Project Management, Strategy & Consulting, and Business Transformation across EMEA.<br>Based in Dubai — available globally.</div>
+    <div class="pills">
+      <a class="pill" href="https://www.linkedin.com/in/annie-thomas-314721161/" target="_blank"><i class="ti ti-brand-linkedin"></i> LinkedIn</a>
+      <a class="pill" href="mailto:anniethomasat1@gmail.com"><i class="ti ti-mail"></i> anniethomasat1@gmail.com</a>
+      <a class="pill" href="tel:+971566288510"><i class="ti ti-phone"></i> +971 566 288 510</a>
+      <a class="pill" href="https://wa.me/971566288510" target="_blank"><i class="ti ti-brand-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2025 · Annie Thomas</span>
+  <span>PMP · MBA LJMU · IIT Madras · Dubai, UAE</span>
+</footer>
+
+<script>
+function gs(id){
+  const el=document.getElementById(id);
+  if(el)el.scrollIntoView({behavior:'smooth'});
+}
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible');}
+  });
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
